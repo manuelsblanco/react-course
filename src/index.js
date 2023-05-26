@@ -1,20 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Greeting, UserCard} from "./Greeting"; 
+import Product, { Navbar } from "./Product";
+import { Button } from "./button";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Greeting() {
-  return (
-    <div>
-      <h1>Hello, Mundo!</h1>
-      <p>Este es mi primer componente</p>
-    </div>
-  );
-}
-
 root.render(
   <div>
-    <Greeting />
-    <Greeting />
-  </div>
+    <Button text=""/> 
+   {/*  <UserCard 
+      name="John Doe" 
+      amount={3000} 
+      married={true}
+      points={[99,88,77,66,55]} 
+      address={{street:'123 Main Street', city:'New York'}} 
+    />
+    <UserCard 
+      name="Jane Doe" 
+      amount={4000} 
+      married={true}
+      points={[99,88,77,66,55]} 
+      address={{street:'654 Blue Street', city:'Mobile'}} 
+    /> */}
+    </div> 
 );
